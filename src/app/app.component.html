@@ -1,0 +1,9 @@
+<button (click)='generatePdf()'>Generate PDF</button>
+<br>
+<div class="card p-4">
+    <div class="form-group">
+      <label class="h4 mb-3" for="">Choose the Images to be append in the PDF</label>
+      <input type="file" class="form-control-file" (change)="fileChanged($event)" aria-describedby="fileHelpId">
+    </div>
+    <img *ngIf="logo" [src]="logo" class="img-thumbnail">
+  </div>
